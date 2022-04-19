@@ -9,11 +9,7 @@ The chatbot is in charge of conveying explanations to a user via an Explanation-
 
 - In the root directory, the following code should be invoked on the terminal: `EQRbot.py baula\kb.dl baula\attacks.dl baula\baula.dl` (Windows) or `EQRbot.py baula/kb.dl baula/attacks.dl baula/baula.dl` (Linux)
 
-- After running the code, the terminal will display the explanations instantiated by the acceptable arguments and the chatbot will begin its dialogue with the user (who will be conversating as Frida, a fictitious patient). Try asking questions as "Are there 
-
-
-'outputs' folder already contains the outputs that you should get after running code. Note that the generation of graphs is optional,
-they are visual representations of the constructed argumentation frameworks.
+- After running the code, the terminal will display the explanations instantiated by the acceptable arguments and the chatbot will begin its dialogue with the user (who will be conversating as Frida, a fictitious patient). Try asking questions as "Are there any alternative treatments?"  
 
 
 [1] Kökciyan, Nadin, et al. "An argumentation-based approach to generate domain-specific explanations." Multi-Agent Systems and Agreement Technologies. Springer, Cham, 2020. 319-337.   
