@@ -1,6 +1,6 @@
 # EQRbot
 The presented code provides a simple implementation of the chatbot introduced in our paper "EQRbot: Providing Explanations Via EQR Argument Scheme". 
-The chatbot is in charge of conveying explanations to a user via an Explanation-Question-Response (EQR) dialogue. These explanations are the product of an argumentation-based reasoning engine computation (which resorts to a modification of the algorithm developed in [1]), and templates of natural language texts.
+The chatbot is in charge of conveying explanations to a patient via an Explanation-Question-Response (EQR) dialogue. These explanations are the product of an argumentation-based reasoning engine computation (which resorts to a modification of the algorithm developed in [1]), and templates of natural language texts.
 
 - Python3 and [DLV](https://www.dlvsystem.it/dlvsite/) (once DLV is downloaded, change the executable file name into 'dlv') should be installed on the system in order to run the code.
 
