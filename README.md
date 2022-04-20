@@ -6,7 +6,7 @@ The chatbot is in charge of conveying explanations to a user via an Explanation-
 
 - The file REQUIREMENTS.txt lists all the Python packages that should be installed.   
 
-- In the root directory, the following code should be invoked on the terminal: `EQRbot.py baula\kb.dl baula\attacks.dl baula\baula.dl` (Windows) or `EQRbot.py baula/kb.dl baula/attacks.dl baula/baula.dl` (Linux)
+- In the root directory, the following code should be invoked on the terminal: `EQRbot.py frida\kb.dl frida\attacks.dl frida\baula.dl` (Windows) or `EQRbot.py frida/kb.dl frida/attacks.dl frida/baula.dl` (Linux)
 
 - After running the code, the terminal will display the explanations instantiated by the acceptable arguments and the chatbot will begin its dialogue with the user (who will be conversating as Frida, a fictitious patient). Try asking questions as "Are there any alternative treatments?"  
 
