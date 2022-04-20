@@ -1,5 +1,5 @@
-spacy
-nltk (nltk.stem, nltk.tokenize, nltk.corpus)
+spacy (in the teminal type: python -m spacy download en_core_web_md)
+nltk 
 sys
 subprocess
 re 
