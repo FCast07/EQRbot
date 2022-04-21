@@ -1,0 +1,6 @@
+% patient facts
+current_state(fever,headache,covid19).
+condition(pregnancy).
+
+% patient status to be achieved
+desired_status(reduction_of_fever_and_headache).
