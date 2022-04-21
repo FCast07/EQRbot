@@ -1,0 +1,43 @@
+% available fields
+field(covid_management).
+field(homeopathy).
+fields(F1,F2) :- field(F1), field(F2).
+
+% available experts
+expert(nice_guidelines).
+expert(local_guidelines).
+experts(E1,E2) :- expert(E1), expert(E2).
+
+% desired value
+value(patient_wellbeing).
+
+% experts' opinions mapping
+recommends(E,F,T) :- expert(E), field(F), treatment(T).
+
+% new state mapping
+new_state(S) :- current_state(R1,R2,R3), recommends(E,F,T), desired_status(S).
+
+% goal mapping
+goal(controlling_the_virus_negative_effects) :- new_state(reduction_of_fever_and_headache).
+
+% value mapping
+promotes(G,V) :- goal(G), value(V).
+
+% relevance
+more_relevant(covid_management,homeopathy).
+
+% reliability
+more_reliable(nice_guidelines,local_guidelines).
+
+% comes from NHS guidelines
+may_cause_complication(ibuprofen,pregnancy).
+
+% comes from NICE guidelines
+treatment(paracetamol).
+treatment(ibuprofen).
+alter(paracetamol,ibuprofen).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% general rules
+alternative(T1,T2) :- alter(T1,T2).
+alternative(T1,T2) :- alter(T2,T1).
