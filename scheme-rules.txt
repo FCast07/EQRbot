@@ -1,0 +1,4 @@
+eqr;eqr([current_state(R1,R2,R3), expert(E), field(F), recommends(E,F,T), new_state(S), goal(G), promotes(G,V)],reachable_goal(G)) :- current_state(R1,R2,R3), expert(E), field(F), treatment(T), desired_status(S), goal(G), value(V). 
+se;se([treatment(T), may_cause_complication(T,C)],not_recommend(T)) :- treatment(T), may_cause_complication(T,C).
+sf;sf([fields(F1,F2), more_relevant(F1,F2)],relevant_field(F1)) :- fields(F1,F2), more_relevant(F1,F2).
+sexp;sexp([experts(E1,E2), more_reliable(E1,E2)],reliable_expert(E1)) :- experts(E1,E2), more_reliable(E1,E2).
