@@ -1,5 +1,5 @@
 spacy (after having installed the spacy package, type the following in the teminal: python -m spacy download en_core_web_md)
-nltk 
+nltk (nltk.stem, nltk.tokenize, nltk.corpus)
 sys
 subprocess
 re 
