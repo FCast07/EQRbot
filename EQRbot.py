@@ -161,7 +161,7 @@ class ChatBot:
         greetings = input(
 """
 
-Hey! I'm an EQRbot! My recommendation to you is the following:
+Hey! I'm an EQRbot! My advice to you is the following:
 
 ##################################################################
 
