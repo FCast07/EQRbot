@@ -6,7 +6,7 @@ The chatbot is in charge of conveying explanations to a patient via an Explanati
 
 - The file REQUIREMENTS.txt lists all the Python packages that should be installed.   
 
-- In the root directory, the following code should be invoked on the terminal: `python EQRbot.py frida/kb.dl frida/attacks.dl frida/frida.dl` (the code had been tested on Windows and Linux).
+- In the root directory, the following code should be invoked on the terminal: `python EQRbot.py frida/kb.dl frida/attacks.dl frida/frida.dl`.
 
 - After running the code, the terminal will display the explanations instantiated by the acceptable arguments, and then the chatbot will begin its dialogue with the user (who will be conversating as Frida, a fictitious patient). Try asking questions such as "Are there any alternative treatments?", "Why rely on the proposed field of expertise?" or "Why follow the recommendation of the chosen expert?" (after having specified, when prompted, the appropriate context).
 
