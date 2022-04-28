@@ -15,7 +15,7 @@ word2vec = spacy.load('en_core_web_md')
 def preprocess(input_sentence):
     #input_sentece is changed into lowercase characters
     input_sentence = input_sentence.lower()
-    #with the exception of unicode words followed by a blank space, every other character are deleted from input_sentence (i.e., as commas, dots, etc)
+    #with the exception of unicode words followed by a blank space, every other character is deleted from input_sentence (i.e., as commas, dots, etc)
     input_sentence = re.sub(r'[^\w\s]','',input_sentence)
     #divide input_sentence into list of single words
     tokens = word_tokenize(input_sentence)
@@ -31,7 +31,7 @@ def preprocess(input_sentence):
 def preprocess_responses(input_sentence):
     #input_sentece is changed into lowercase characters
     input_sentence = input_sentence.lower()
-    #with the exception of unicode words followed by a blank space or separated by an underscore, every other character are deleted from input_sentence (i.e., as commas, dots, etc)
+    #with the exception of unicode words followed by a blank space or separated by an underscore, every other character is deleted from input_sentence (i.e., as commas, dots, etc)
     input_sentence = re.sub(r'[^\w\s]','',input_sentence)
     #replace every _ character with a blank space
     input_sentence = input_sentence.replace("_", " ")
@@ -45,7 +45,7 @@ def preprocess_responses(input_sentence):
 def preprocess_sentiment(input_sentence):
     #input_sentece is changed into lowercase characters
     input_sentence = input_sentence.lower()
-    #with the exception of unicode words followed by a blank space, every other string are deleted from input_sentence (i.e., as commas, dots, etc)
+    #with the exception of unicode words followed by a blank space, every other string is deleted from input_sentence (i.e., as commas, dots, etc)
     input_sentence = re.sub(r'[^\w\s]','',input_sentence)
     #divide input_sentence into list of single words
     tokens = word_tokenize(input_sentence)
