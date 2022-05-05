@@ -21,7 +21,7 @@ def computeAFaccepted(params,S):
         if i!=0:
             params.append(para)
 
-    params.insert(0,'dlv') # requires dlv to run from terminal
+    params.insert(0,'./dlv') # requires dlv to run from terminal
     output = subprocess.check_output(params)
     exts = list(filter(lambda a: a != b'', output.split(b"\n")))
     exts = exts[1:len(exts)]
