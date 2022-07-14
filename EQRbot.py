@@ -9,7 +9,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 stop_words = set(stopwords.words("english"))
 import spacy
-word2vec = spacy.load('en_core_web_md')
+
 
 #function for preprocessing text
 def preprocess(input_sentence):
