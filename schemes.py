@@ -61,7 +61,7 @@ def sf(s):
     bindings = string_parser(pred_dict,s)
 
     explanation = """The treatment has been recommended by an expert in the field of {}._
-This scientific field has been identified as more relevant to devise your care than other fields, such as {}.""".format(bindings["F1"],bindings["F2"])
+This scientific field has been identified as more relevant to devise your care than other available fields, such as {}.""".format(bindings["F1"],bindings["F2"])
 
     return bindings,explanation
 
