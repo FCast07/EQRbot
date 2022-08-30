@@ -1,6 +1,6 @@
 import re
 from evalaf_expaf import computeAFaccepted, getSchemeDefs, prepareArgs, evalaf, expaf
-from preprocessing_functions import get_part_of_speech, preprocess_text, preprocess_eqr_input, preprocess_eqr_responses, lemmatize_eqr_responses, preprocess_sentiment
+from preprocessing_functions import get_part_of_speech, preprocess_eqr_input, preprocess_eqr_responses, lemmatize_eqr_responses, preprocess_sentiment
 import schemes # explanation schemes (templates)
 from helpers import parse_extension # helper function
 from collections import Counter
