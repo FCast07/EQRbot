@@ -25,17 +25,6 @@ def get_part_of_speech(word):
     return most_likely_part_of_speech
 
 
-#function for preprocessing web_text
-def preprocess_text(text):
-    #with the exception of unicode words, every other character is deleted from input_sentence (i.e., as commas, dots, etc)
-    cleaned = re.sub(r'\W+', ' ', text).lower()
-    tokenized = word_tokenize(cleaned)
-    tokenized_polished = [i for i in tokenized if not i in stop_words]
-    #lemmatize each token according to the specific part of speech it represents
-    normalized = " ".join([normalizer.lemmatize(token, get_part_of_speech(token)) for token in tokenized_polished])
-    return normalized
-
-
 #function for preprocessing eqr_input
 def preprocess_eqr_input(input_sentence):
     #input_sentece is changed into lowercase characters
