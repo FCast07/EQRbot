@@ -9,7 +9,6 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 stop_words = set(stopwords.words("english"))
-#import spacy
 
 #function for comparing similar words count
 def compare_overlap(words_count1, words_count2):
