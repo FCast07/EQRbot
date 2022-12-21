@@ -53,7 +53,7 @@ and promote the patient's {}.""".format(bindings["R1"],bindings["R2"],bindings["
 # SF SCHEME for Relevant Field of Expertise
 """
     s: an argument string to parse.
-    example input: s = "sf([fields(covid_management,homeopathy),more_relevant(covid_management,homeopathy)],relevant_field(covid_management))"
+    example input: s = "sf([fields(covid_management,virology),more_relevant(covid_management,virology)],relevant_field(covid_management))"
 """
 def sf(s):
     pred_dict= {"fields":["F1","F2"]}
