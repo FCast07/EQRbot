@@ -38,6 +38,6 @@ treatment(ibuprofen).
 alter(paracetamol,ibuprofen).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% general rules
+%% general rules
 alternative(T1,T2) :- alter(T1,T2).
 alternative(T1,T2) :- alter(T2,T1).
